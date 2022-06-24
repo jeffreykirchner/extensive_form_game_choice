@@ -177,7 +177,7 @@ Partial Class frmMain
         Me.GroupBox2.Controls.Add(Me.cmdBegin)
         Me.GroupBox2.Controls.Add(Me.cmdReset)
         Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(281, 7)
+        Me.GroupBox2.Location = New System.Drawing.Point(327, 7)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(762, 119)
         Me.GroupBox2.TabIndex = 28
@@ -308,9 +308,9 @@ Partial Class frmMain
         Me.GroupBox1.Controls.Add(Me.lblIP)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(49, 7)
+        Me.GroupBox1.Location = New System.Drawing.Point(6, 7)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(226, 119)
+        Me.GroupBox1.Size = New System.Drawing.Size(315, 119)
         Me.GroupBox1.TabIndex = 27
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Status"
@@ -389,14 +389,14 @@ Partial Class frmMain
         Me.DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6})
-        Me.DataGridView1.Location = New System.Drawing.Point(46, 132)
+        Me.DataGridView1.Location = New System.Drawing.Point(5, 132)
         Me.DataGridView1.MultiSelect = False
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(997, 580)
+        Me.DataGridView1.Size = New System.Drawing.Size(1085, 580)
         Me.DataGridView1.TabIndex = 25
         '
         'Column1
