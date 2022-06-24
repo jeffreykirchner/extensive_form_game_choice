@@ -262,45 +262,47 @@ Module modMain
 
                 .DataGridView1.Rows(index - 1).Cells(2).Value = "Done"
 
-                If checkin = getNumberOfActivePlayers() And
-                   currentPeriod = numberOfPeriods Then
+                If currentPeriod <> numberOfPeriods Then Exit Sub
 
-                    playerDf.WriteLine("")
+                For i As Integer = 1 To numberOfPlayers
+                    If playerList(i).sname = "" Then Exit Sub
+                Next
 
-                    playerDf.WriteLine("Earnings")
-                    outstr = "Name,Earnings,"
+                playerDf.WriteLine("")
+
+                playerDf.WriteLine("Earnings")
+                outstr = "Name,Earnings,"
+                playerDf.WriteLine(outstr)
+
+                For i As Integer = 1 To numberOfPlayers
+
+                    outstr = .DataGridView1.Rows(i - 1).Cells(1).Value & ","
+                    outstr &= .DataGridView1.Rows(i - 1).Cells(3).Value & ","
                     playerDf.WriteLine(outstr)
+                Next
 
-                    For i As Integer = 1 To numberOfPlayers
+                'playerDf.WriteLine("")
+                'playerDf.WriteLine("Instruction Length")
+                'outstr = "Player,"
+                'For i As Integer = 1 To instructionCount
+                '    outstr &= "Page " & i & ","
+                'Next
 
-                        outstr = .DataGridView1.Rows(i - 1).Cells(1).Value & ","
-                        outstr &= .DataGridView1.Rows(i - 1).Cells(3).Value & ","
-                        playerDf.WriteLine(outstr)
-                    Next
+                'playerDf.WriteLine(outstr)
 
-                    'playerDf.WriteLine("")
-                    'playerDf.WriteLine("Instruction Length")
-                    'outstr = "Player,"
-                    'For i As Integer = 1 To instructionCount
-                    '    outstr &= "Page " & i & ","
-                    'Next
+                'For i As Integer = 1 To numberOfPlayers
+                '    outstr = i & ",N\A,"
 
-                    'playerDf.WriteLine(outstr)
+                '    For j As Integer = 2 To instructionCount
+                '        outstr &= Math.Round(playerList(i).instructionLength(j), 1) & ","
+                '    Next
 
-                    'For i As Integer = 1 To numberOfPlayers
-                    '    outstr = i & ",N\A,"
+                '    playerDf.WriteLine(outstr)
+                'Next
 
-                    '    For j As Integer = 2 To instructionCount
-                    '        outstr &= Math.Round(playerList(i).instructionLength(j), 1) & ","
-                    '    Next
-
-                    '    playerDf.WriteLine(outstr)
-                    'Next
-
-                    playerDf.Close()
-                    summaryDf.Close()
-                    'replayDf.Close()
-                End If
+                playerDf.Close()
+                summaryDf.Close()
+                'replayDf.Close()
             End With
         Catch ex As Exception
             appEventLog_Write("error: ", ex)

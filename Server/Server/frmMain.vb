@@ -351,6 +351,7 @@ Public Class frmMain
 
                 playerList(i).earnings = 0
                 playerList(i).roundEarnings = 0
+                playerList(i).sname = ""
 
                 DataGridView1.Rows(i - 1).Cells(0).Value = i
                 DataGridView1.Rows(i - 1).Cells(1).Value = ""
