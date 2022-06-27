@@ -35,11 +35,6 @@
 
                 nodeList(currentNode, currentTree).subNode3Id = txtSubNode3.Text
 
-                nodeList(currentNode, currentTree).sortValue = txtSortValue.Text
-                nodeList(currentNode, currentTree).sortValue1 = txtSortValue1.Text
-                nodeList(currentNode, currentTree).sortValue2 = txtSortValue2.Text
-                nodeList(currentNode, currentTree).sortValue3 = txtSortValue3.Text
-
             End With
 
 

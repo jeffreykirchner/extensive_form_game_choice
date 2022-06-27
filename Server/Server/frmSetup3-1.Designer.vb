@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmSetup3_1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmSetup3_1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmSetup3_1))
         Me.cmdDone = New System.Windows.Forms.Button()
@@ -47,12 +47,6 @@ Partial Class frmSetup3_1
         Me.txtSubNode2 = New System.Windows.Forms.TextBox()
         Me.txtSubNode3 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtSortValue3 = New System.Windows.Forms.TextBox()
-        Me.txtSortValue2 = New System.Windows.Forms.TextBox()
-        Me.txtSortValue1 = New System.Windows.Forms.TextBox()
-        Me.txtSortValue = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.nudOwner, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -61,7 +55,7 @@ Partial Class frmSetup3_1
         Me.cmdDone.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdDone.Location = New System.Drawing.Point(33, 331)
         Me.cmdDone.Name = "cmdDone"
-        Me.cmdDone.Size = New System.Drawing.Size(468, 32)
+        Me.cmdDone.Size = New System.Drawing.Size(370, 32)
         Me.cmdDone.TabIndex = 35
         Me.cmdDone.Text = "Done"
         Me.cmdDone.UseVisualStyleBackColor = True
@@ -82,7 +76,7 @@ Partial Class frmSetup3_1
         Me.lblTop1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTop1.Location = New System.Drawing.Point(123, 92)
         Me.lblTop1.Name = "lblTop1"
-        Me.lblTop1.Size = New System.Drawing.Size(36, 16)
+        Me.lblTop1.Size = New System.Drawing.Size(35, 16)
         Me.lblTop1.TabIndex = 42
         Me.lblTop1.Text = "Top"
         '
@@ -92,7 +86,7 @@ Partial Class frmSetup3_1
         Me.lblBottom1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblBottom1.Location = New System.Drawing.Point(103, 123)
         Me.lblBottom1.Name = "lblBottom1"
-        Me.lblBottom1.Size = New System.Drawing.Size(56, 16)
+        Me.lblBottom1.Size = New System.Drawing.Size(55, 16)
         Me.lblBottom1.TabIndex = 44
         Me.lblBottom1.Text = "Bottom"
         '
@@ -112,7 +106,7 @@ Partial Class frmSetup3_1
         Me.lblBottom2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblBottom2.Location = New System.Drawing.Point(103, 191)
         Me.lblBottom2.Name = "lblBottom2"
-        Me.lblBottom2.Size = New System.Drawing.Size(56, 16)
+        Me.lblBottom2.Size = New System.Drawing.Size(55, 16)
         Me.lblBottom2.TabIndex = 48
         Me.lblBottom2.Text = "Bottom"
         '
@@ -132,7 +126,7 @@ Partial Class frmSetup3_1
         Me.lblTop2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTop2.Location = New System.Drawing.Point(123, 160)
         Me.lblTop2.Name = "lblTop2"
-        Me.lblTop2.Size = New System.Drawing.Size(36, 16)
+        Me.lblTop2.Size = New System.Drawing.Size(35, 16)
         Me.lblTop2.TabIndex = 46
         Me.lblTop2.Text = "Top"
         '
@@ -172,7 +166,7 @@ Partial Class frmSetup3_1
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(128, 17)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(51, 16)
+        Me.Label3.Size = New System.Drawing.Size(50, 16)
         Me.Label3.TabIndex = 52
         Me.Label3.Text = "Owner"
         '
@@ -203,7 +197,7 @@ Partial Class frmSetup3_1
         Me.lblBottom3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblBottom3.Location = New System.Drawing.Point(103, 257)
         Me.lblBottom3.Name = "lblBottom3"
-        Me.lblBottom3.Size = New System.Drawing.Size(56, 16)
+        Me.lblBottom3.Size = New System.Drawing.Size(55, 16)
         Me.lblBottom3.TabIndex = 59
         Me.lblBottom3.Text = "Bottom"
         '
@@ -223,7 +217,7 @@ Partial Class frmSetup3_1
         Me.lblTop3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTop3.Location = New System.Drawing.Point(123, 226)
         Me.lblTop3.Name = "lblTop3"
-        Me.lblTop3.Size = New System.Drawing.Size(36, 16)
+        Me.lblTop3.Size = New System.Drawing.Size(35, 16)
         Me.lblTop3.TabIndex = 57
         Me.lblTop3.Text = "Top"
         '
@@ -292,84 +286,18 @@ Partial Class frmSetup3_1
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.DimGray
-        Me.Label6.Location = New System.Drawing.Point(233, 298)
+        Me.Label6.Location = New System.Drawing.Point(148, 301)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(148, 18)
         Me.Label6.TabIndex = 66
         Me.Label6.Text = "*Enter -1 for none."
         '
-        'Label1
-        '
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(410, 59)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(94, 38)
-        Me.Label1.TabIndex = 67
-        Me.Label1.Text = "Sort Value" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(payoff)"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'txtSortValue3
-        '
-        Me.txtSortValue3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSortValue3.Location = New System.Drawing.Point(429, 235)
-        Me.txtSortValue3.Name = "txtSortValue3"
-        Me.txtSortValue3.Size = New System.Drawing.Size(61, 22)
-        Me.txtSortValue3.TabIndex = 70
-        Me.txtSortValue3.Text = "0"
-        Me.txtSortValue3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'txtSortValue2
-        '
-        Me.txtSortValue2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSortValue2.Location = New System.Drawing.Point(429, 169)
-        Me.txtSortValue2.Name = "txtSortValue2"
-        Me.txtSortValue2.Size = New System.Drawing.Size(61, 22)
-        Me.txtSortValue2.TabIndex = 69
-        Me.txtSortValue2.Text = "0"
-        Me.txtSortValue2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'txtSortValue1
-        '
-        Me.txtSortValue1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSortValue1.Location = New System.Drawing.Point(429, 101)
-        Me.txtSortValue1.Name = "txtSortValue1"
-        Me.txtSortValue1.Size = New System.Drawing.Size(61, 22)
-        Me.txtSortValue1.TabIndex = 68
-        Me.txtSortValue1.Text = "0"
-        Me.txtSortValue1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'txtSortValue
-        '
-        Me.txtSortValue.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSortValue.Location = New System.Drawing.Point(429, 17)
-        Me.txtSortValue.Name = "txtSortValue"
-        Me.txtSortValue.Size = New System.Drawing.Size(61, 22)
-        Me.txtSortValue.TabIndex = 72
-        Me.txtSortValue.Text = "0"
-        Me.txtSortValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(292, 18)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(131, 18)
-        Me.Label2.TabIndex = 71
-        Me.Label2.Text = "Node Sort Value"
-        '
         'frmSetup3_1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(521, 381)
+        Me.ClientSize = New System.Drawing.Size(415, 381)
         Me.ControlBox = False
-        Me.Controls.Add(Me.txtSortValue)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.txtSortValue3)
-        Me.Controls.Add(Me.txtSortValue2)
-        Me.Controls.Add(Me.txtSortValue1)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.txtSubNode3)
         Me.Controls.Add(Me.txtSubNode2)
@@ -428,10 +356,4 @@ Partial Class frmSetup3_1
     Friend WithEvents txtSubNode2 As System.Windows.Forms.TextBox
     Friend WithEvents txtSubNode3 As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents txtSortValue3 As System.Windows.Forms.TextBox
-    Friend WithEvents txtSortValue2 As System.Windows.Forms.TextBox
-    Friend WithEvents txtSortValue1 As System.Windows.Forms.TextBox
-    Friend WithEvents txtSortValue As System.Windows.Forms.TextBox
-    Friend WithEvents Label2 As System.Windows.Forms.Label
 End Class

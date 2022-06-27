@@ -928,10 +928,6 @@ Module modMain
             n.subNode2Id = getINI(sfile, "node" & tree & "-" & id, "subNode2Id")
             n.subNode3Id = getINI(sfile, "node" & tree & "-" & id, "subNode3Id")
 
-            n.sortValue = getINI(sfile, "node" & tree & "-" & id, "sortValue")
-            n.sortValue1 = getINI(sfile, "node" & tree & "-" & id, "sortValue1")
-            n.sortValue2 = getINI(sfile, "node" & tree & "-" & id, "sortValue2")
-            n.sortValue3 = getINI(sfile, "node" & tree & "-" & id, "sortValue3")
         Catch ex As Exception
             appEventLog_Write("error :", ex)
         End Try
@@ -962,12 +958,6 @@ Module modMain
             localNode.subNode1Id = remoteNode.subNode1Id
             localNode.subNode2Id = remoteNode.subNode2Id
             localNode.subNode3Id = remoteNode.subNode3Id
-
-            localNode.sortValue = remoteNode.sortValue
-            localNode.sortValue1 = remoteNode.sortValue1
-            localNode.sortValue2 = remoteNode.sortValue2
-            localNode.sortValue3 = remoteNode.sortValue3
-
 
         Catch ex As Exception
             appEventLog_Write("error: ", ex)

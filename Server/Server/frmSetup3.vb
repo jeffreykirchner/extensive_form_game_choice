@@ -31,10 +31,6 @@
                     writeINI(sfile, "node" & i & "-" & j, "subNode2Id", nodeList(j, i).subNode2Id)
                     writeINI(sfile, "node" & i & "-" & j, "subNode3Id", nodeList(j, i).subNode3Id)
 
-                    writeINI(sfile, "node" & i & "-" & j, "sortValue", nodeList(j, i).sortValue)
-                    writeINI(sfile, "node" & i & "-" & j, "sortValue1", nodeList(j, i).sortValue1)
-                    writeINI(sfile, "node" & i & "-" & j, "sortValue2", nodeList(j, i).sortValue2)
-                    writeINI(sfile, "node" & i & "-" & j, "sortValue3", nodeList(j, i).sortValue3)
 
                 Next
             Next
@@ -272,12 +268,6 @@
             frmSetup3_1.txtSubNode1.Text = nodeList(currentNode, currentTree).subNode1Id
             frmSetup3_1.txtSubNode2.Text = nodeList(currentNode, currentTree).subNode2Id
             frmSetup3_1.txtSubNode3.Text = nodeList(currentNode, currentTree).subNode3Id
-
-            frmSetup3_1.txtSortValue.Text = nodeList(currentNode, currentTree).sortValue
-            frmSetup3_1.txtSortValue1.Text = nodeList(currentNode, currentTree).sortValue1
-            frmSetup3_1.txtSortValue2.Text = nodeList(currentNode, currentTree).sortValue2
-            frmSetup3_1.txtSortValue3.Text = nodeList(currentNode, currentTree).sortValue3
-
 
         Catch ex As Exception
             appEventLog_Write("error :", ex)

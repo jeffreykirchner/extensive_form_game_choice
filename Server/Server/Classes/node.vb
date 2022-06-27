@@ -20,12 +20,6 @@
     Public pt3 As Point
     Public pt4 As Point
 
-    'sort values
-    Public sortValue As Integer
-    Public sortValue1 As Integer
-    Public sortValue2 As Integer
-    Public sortValue3 As Integer
-
     'display counts
     Public count As Integer
     Public countRight As Integer
@@ -79,10 +73,6 @@
             outstr &= pt3.Y & ";"
             outstr &= pt4.X & ";"
             outstr &= pt4.Y & ";"
-            outstr &= sortValue & ";"
-            outstr &= sortValue1 & ";"
-            outstr &= sortValue2 & ";"
-            outstr &= sortValue3 & ";"
 
             Return outstr
         Catch ex As Exception
@@ -151,18 +141,6 @@
             nextToken += 1
 
             pt4.Y = msgtokens(nextToken)
-            nextToken += 1
-
-            sortValue = msgtokens(nextToken)
-            nextToken += 1
-
-            sortValue1 = msgtokens(nextToken)
-            nextToken += 1
-
-            sortValue2 = msgtokens(nextToken)
-            nextToken += 1
-
-            sortValue3 = msgtokens(nextToken)
             nextToken += 1
 
         Catch ex As Exception
