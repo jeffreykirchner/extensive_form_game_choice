@@ -25,6 +25,7 @@ Partial Class frmContinue
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmContinue))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cmdContinue = New System.Windows.Forms.Button()
+        Me.lblError = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -48,12 +49,25 @@ Partial Class frmContinue
         Me.cmdContinue.Text = "Continue"
         Me.cmdContinue.UseVisualStyleBackColor = False
         '
+        'lblError
+        '
+        Me.lblError.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblError.ForeColor = System.Drawing.Color.Crimson
+        Me.lblError.Location = New System.Drawing.Point(12, 139)
+        Me.lblError.Name = "lblError"
+        Me.lblError.Size = New System.Drawing.Size(322, 31)
+        Me.lblError.TabIndex = 2
+        Me.lblError.Text = "Out players must enter their name."
+        Me.lblError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblError.Visible = False
+        '
         'frmContinue
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(346, 140)
+        Me.ClientSize = New System.Drawing.Size(346, 144)
         Me.ControlBox = False
+        Me.Controls.Add(Me.lblError)
         Me.Controls.Add(Me.cmdContinue)
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -66,4 +80,5 @@ Partial Class frmContinue
 
     Friend WithEvents Label1 As Label
     Friend WithEvents cmdContinue As Button
+    Friend WithEvents lblError As Label
 End Class
