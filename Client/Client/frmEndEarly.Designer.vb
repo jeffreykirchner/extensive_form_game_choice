@@ -29,12 +29,12 @@ Partial Class frmEndEarly
         'lbl1
         '
         Me.lbl1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl1.Location = New System.Drawing.Point(12, 120)
+        Me.lbl1.Location = New System.Drawing.Point(12, 104)
         Me.lbl1.Name = "lbl1"
-        Me.lbl1.Size = New System.Drawing.Size(776, 101)
+        Me.lbl1.Size = New System.Drawing.Size(776, 144)
         Me.lbl1.TabIndex = 0
-        Me.lbl1.Text = "We could not find a match for you." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "The experiment is over.  Please wait for your" &
-    " name to be called."
+        Me.lbl1.Text = "We could not find a match for you." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "The experiment is over.  " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Please remain " &
+    "seated."
         Me.lbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'frmEndEarly
