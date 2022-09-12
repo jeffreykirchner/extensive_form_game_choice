@@ -769,7 +769,7 @@ Module modMain
             frmChoice.Hide()
             frmEndEarly.Show()
 
-            frmEndEarly.lbl1.Text = "Please wait at your seat while we pay the unmatched people." & vbCrLf & "The experiment will resume shortly. "
+            frmEndEarly.lbl1.Text = "Please wait." & vbCrLf & "The experiment will resume shortly. "
 
             frmEndEarly.Text = "Client " & inumber
         Catch ex As Exception
