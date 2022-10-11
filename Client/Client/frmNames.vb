@@ -21,30 +21,16 @@
                 Exit Sub
             End If
 
-            outstr = txtName1.Text
+            outstr = txtName1.Text & ";"
+            outstr &= txtName2.Text & ";"
 
-            If txtName2.Text <> "" Then
-                outstr &= "  " & txtName2.Text
-            End If
-
-            If txtName3.Text <> "" Then
-                outstr &= "  " & txtName3.Text
-            End If
-
-            wskClient.Send("07", outstr & ";")
+            wskClient.Send("07", outstr)
 
             temps = frmMain.txtProfit.Text
 
-            'If payoffMode = "dollars" Or payoffMode = "pounds" Then
             temps = CDbl(temps)
-                'Else
-                '    temps = CDbl(temps) / 100
-                'End If
 
-                '      Dim tempSymbol As String = ""
-
-
-                frmMain.txtMessages.Text = "Your earnings are " & FormatCurrency(temps) & "."
+            frmMain.txtMessages.Text = "Your earnings are " & FormatCurrency(temps) & "."
 
             'show client their total earnings
             If showPopups Then MessageBox.Show("Your earnings are " & FormatCurrency(temps) & ".", "Earnings", MessageBoxButtons.OK, MessageBoxIcon.Information)

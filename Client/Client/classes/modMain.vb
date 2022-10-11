@@ -512,6 +512,7 @@ Module modMain
                 End If
 
                 If Not showInstructions Then
+                    periods(1).currentTreeIndex = 1
                     startNextPeriod(periods(currentPeriod).pairingRule)
                 Else
                     setupScreen()
@@ -671,6 +672,7 @@ Module modMain
                     resetTree(periods(currentPeriod).trees(1))
                     resetTree(periods(currentPeriod).trees(2))
                 Else
+
                     .Show()
                 End If
 
@@ -975,6 +977,8 @@ Module modMain
                         For i As Integer = 1 To tempN
                             frmNames.txtName1.Text &= Chr(rand(122, 60))
                         Next
+
+                        frmNames.txtName2.Text = rand(99999999, 1)
 
                         frmNames.cmdSubmitAction(False)
                     End If

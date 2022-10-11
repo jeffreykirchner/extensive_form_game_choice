@@ -334,6 +334,11 @@ Public Class frmMain
             str = "Period,SubPeriod,Player,Partner,Tree,FinalNode,FinalDirection,MyPayoff,PartnerPayoff,MyType,MadeFinalDecision"
             playerDf.WriteLine(str)
 
+            filename = "Recruiter_Data_" & tempTime & ".csv"
+            filename = System.Windows.Forms.Application.StartupPath & "\datafiles\" & filename
+
+            recruiterDf = File.CreateText(filename)
+
             filename = "Parameters_" & tempTime & ".csv"
             filename = Application.StartupPath & "\datafiles\" & filename
             writeINI(sfile, "GameSettings", "gameName", "ESI Software2")
@@ -392,7 +397,7 @@ Public Class frmMain
 
                 For i As Integer = 1 To numberOfPlayers
 
-                    playerList(i).treeChoice(1) = periods(1).trees(1)
+                    playerList(i).treeChoice(1) = 1
                     playerList(i).setupNodes()
 
                 Next
@@ -460,6 +465,7 @@ Public Class frmMain
             If summaryDf IsNot Nothing Then summaryDf.Close()
             If playerDf IsNot Nothing Then playerDf.Close()
             If replayDf IsNot Nothing Then replayDf.Close()
+            If recruiterDf IsNot Nothing Then recruiterDf.Close()
 
             'shut down clients
             Dim i As Integer

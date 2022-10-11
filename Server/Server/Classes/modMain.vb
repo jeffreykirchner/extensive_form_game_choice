@@ -16,6 +16,7 @@ Module modMain
     Public summaryDf As StreamWriter                 'data file
     Public playerDf As StreamWriter                 'data file
     Public replayDf As StreamWriter                 'data file
+    Public recruiterDf As StreamWriter               'recruiter earnings upload file 
     Public frmServer As New frmMain                  'main form 
     Public filename As String                        'location of data file
     Public filename2 As String                       'location of data file
@@ -256,7 +257,7 @@ Module modMain
                 Dim outstr As String = ""
                 Dim msgtokens() As String = sinstr.Split(";")
 
-                playerList(index).takeName(msgtokens(0))
+                playerList(index).takeName(msgtokens(0), msgtokens(1))
 
                 If currentPeriod = numberOfPeriods Then checkin += 1
 
@@ -275,10 +276,15 @@ Module modMain
                 playerDf.WriteLine(outstr)
 
                 For i As Integer = 1 To numberOfPlayers
-
                     outstr = .DataGridView1.Rows(i - 1).Cells(1).Value & ","
                     outstr &= .DataGridView1.Rows(i - 1).Cells(3).Value & ","
                     playerDf.WriteLine(outstr)
+
+                    'recruiter data file
+                    outstr = playerList(i).sid & ","
+                    outstr &= .DataGridView1.Rows(i - 1).Cells(3).Value
+
+                    recruiterDf.WriteLine(outstr)
                 Next
 
                 'playerDf.WriteLine("")
@@ -302,6 +308,7 @@ Module modMain
 
                 playerDf.Close()
                 summaryDf.Close()
+                recruiterDf.Close()
                 'replayDf.Close()
             End With
         Catch ex As Exception

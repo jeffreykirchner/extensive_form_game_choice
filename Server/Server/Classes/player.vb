@@ -3,6 +3,7 @@
 Public Class player
     Public inumber As Integer            'ID number
     Public sname As String               'name of person
+    Public sid As String                 'student id number of person
     Public socketNumber As String        'winsock ID number
     Public relativeNumber As Integer     'either buyer or seller number
     Public earnings As Double            'experimental earnings
@@ -27,7 +28,7 @@ Public Class player
     Public lastIDSent As String
     Public lastMessageSent As String
 
-    Public treeChoice(100) As Integer       'choice the player makes between two trees
+    Public treeChoice(100) As Integer       'choice the player makes between two trees (1 or 2)
     Public outOfGame As Boolean
 
 
@@ -236,12 +237,13 @@ Public Class player
         End Try
     End Sub
 
-    Public Sub takeName(ByVal sinstr As String)
+    Public Sub takeName(ByVal sname As String, ByVal sid As String)
         Try
             'get the subject's name
 
             With frmServer
-                sname = sinstr
+                Me.sname = sname
+                Me.sid = sid
                 .DataGridView1.Rows(inumber - 1).Cells(1).Value = sname
             End With
         Catch ex As Exception

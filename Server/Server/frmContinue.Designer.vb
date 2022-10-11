@@ -35,7 +35,7 @@ Partial Class frmContinue
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(322, 45)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Payout unmatched players then press Continue."
+        Me.Label1.Text = "Continue after un-matched players have entered their names."
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'cmdContinue
