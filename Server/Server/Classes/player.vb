@@ -54,7 +54,7 @@ Public Class player
                 Else
 
                     .DataGridView1.Rows(inumber - 1).Cells(4).Value = partnerList(1)
-                    .DataGridView1.Rows(inumber - 1).Cells(5).Value = treeChoice(1)
+                    .DataGridView1.Rows(inumber - 1).Cells(5).Value = periods(currentPeriod).trees(treeChoice(1))
                 End If
 
                 'If inumber <= numberOfPlayers / 2 Then
@@ -443,7 +443,7 @@ Public Class player
                     setupNodes()
 
                     .DataGridView1.Rows(inumber - 1).Cells(4).Value = partnerList(currentPeriod)
-                    .DataGridView1.Rows(inumber - 1).Cells(5).Value = treeChoice(currentPeriod)
+                    .DataGridView1.Rows(inumber - 1).Cells(5).Value = periods(currentPeriod).trees(treeChoice(currentPeriod))
                 End If
 
 
@@ -484,7 +484,7 @@ Public Class player
 
                 .DataGridView1.Rows(inumber - 1).Cells(2).Value = "Playing"
                 .DataGridView1.Rows(inumber - 1).Cells(4).Value = partnerList(currentPeriod)
-                .DataGridView1.Rows(inumber - 1).Cells(5).Value = treeChoice(currentPeriod)
+                .DataGridView1.Rows(inumber - 1).Cells(5).Value = periods(currentPeriod).trees(treeChoice(currentPeriod))
 
                 sendMessageToClient("10", outstr)
             End With
